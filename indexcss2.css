@@ -10,7 +10,7 @@ h1 {
   position: relative;
   margin: auto;
   margin-top: 80px;
-  width: 36%;
+  width: 700px;
   height: 500px;
   border: 5px solid #016abc;
   background-color: #002544;
@@ -19,6 +19,7 @@ h1 {
 }
 .slider {
   display: flex;
+  width: 100%;
   height: 500px;
 }
 .prev,

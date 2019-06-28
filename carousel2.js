@@ -16,9 +16,16 @@ slider.style.transform = "translateX(" + -size * counter + "px)";
 
 function currentSlide(x) {
   stopSlide();
-  slider.style.transform = "translateX(" + -size * counter + "px)";
+  console.log("current " + x);
+  console.log("Counter " + counter);
+
+  slider.style.transform = "translateX(" + -size * x + "px)";
   counter = x - 1;
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
   time = setTimeout(nextSlide, 3000);
+  dots[x - 1].className += " active";
 }
 
 function nextSlide() {
