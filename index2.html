@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./indexcss2.css" />
+    <title>Slider</title>
+  </head>
+  <body>
+    <h1>Slider Menu</h1>
+    <div class="container">
+      <div class="slider">
+        <img src="./assets/7.png" id="lastImg" alt="" />
+        <img src="./assets/1.png" alt="" />
+        <img src="./assets/2.png" alt="" />
+        <img src="./assets/3.png" alt="" />
+        <img src="./assets/4.png" alt="" />
+        <img src="./assets/5.png" alt="" />
+        <img src="./assets/6.png" alt="" />
+        <img src="./assets/7.png" alt="" />
+        <img src="./assets/1.png" id="firstImg" alt="" />
+      </div>
+      <a class="next" onclick="nextSlide()">&#10095;</a>
+      <a class="prev">&#10094;</a>
+    </div>
+    <br />
+    <div>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span
+        class="dot"
+        style="visibility: hidden;"
+        onclick="currentSlide(7)"
+      ></span>
+    </div>
+
+    <script src="./carousel2.js"></script>
+  </body>
+</html>
